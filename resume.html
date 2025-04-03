@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+    <style>
+            :root {
+        --dominant-color: #9EC6F3;
+        --secondary-color: #9FB3DF;
+        --accent-color: #BDDDE4
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--dominant-color);
+    }
+    header {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    nav {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, font-size 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            font-size: 1.1em;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        section {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+     <header>
+        <img src="image/miguelskie.jpg" alt="photo of Miguel Calimlim" width="150">
+        <h1 class="section-title" id="myname">Miguel Calimlim</h1>
+    </header>
+
+    <header>
+    <nav>
+        <hr>
+            <a href="index.html">HOME</a>
+            <a href="resume.html">RESUME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <nav>
+        <hr>
+        <ul>
+            <a href="#Experience">EXPERIENCE</a>
+            <a href="#Skills">SKILLS</a>
+            <a href="#Certification">CERTIFICATION</a>
+            <a href="#Education">EDUCATION</a>
+        </ul>
+    </nav>
+    <!--Experience-->
+    <hr>
+    <section id="Resume">
+        <h2>RESUME</h2>
+    </section>
+    <section id="Experience">
+        <h2>Experience</h2>
+        <article>
+            <h3>IT Student</h3>
+            <p>Our Lady of Fatima University | 2024 - 2025</p>
+            <ul>
+                System Troubleshooting
+                Software Developing
+                Microsoft
+            </ul>
+
+            <h3>Junior Web Developer</h3>
+            <p>Quezon City | - present</p>
+            <ul>
+                Maintaining Website
+                Debugging
+            </ul>
+        </article>
+    </section>
+
+    <!--Skills-->
+    <section id="Skills">
+        <h2>Skills</h2>
+        <article>
+            <ul>
+                Social communication
+                Time management      
+                </ul>
+        </article>
+    </section>
+
+    <!--Certification-->
+    <section id="Certification">
+        <h2>Certification</h2>
+        <article>
+            <p><strong>2nd Runner Up In Speech Choir</strong></p>
+            <p>Metro Manila College | August 20, 2024</p>
+        </article>
+    </section>
+
+    <!--Education-->
+    <section id="Education">
+        <h2>Education</h2>
+        <article>
+            <p>Bachelor's in Information Technology</p>
+            <p>Our Lady Of Fatima University</p>
+        </article>
+    </section>
+</body>
+</html>

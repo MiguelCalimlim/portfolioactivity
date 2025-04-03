@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+    <style>
+            :root {
+        --dominant-color: #9EC6F3;
+        --secondary-color: #9FB3DF;
+        --accent-color: #BDDDE4
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--dominant-color);
+    }
+    header {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    nav {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, font-size 0.3s ease;
+            text-align: center
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            font-size: 1.1em;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        section {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <body>
+    <!--Basic Details-->
+    <header>
+        <img src="image/miguelskie.jpg" alt="photo of Miguel Calimlim" width="150">
+        <h1 class="section-title" id="myname">Miguel Calimlim</h1>
+    </header>
+<header>
+    <nav>
+        <hr>
+            <a href="index.html">HOME</a>
+            <a href="resume.html">RESUME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+    </nav>
+    <nav>
+        <hr>
+        <ul>
+            <a href="#video">VIDEO</a>
+            <a href="#audio">AUDIO</a>
+        </ul>
+    </nav>
+
+    <!--Portfolio-->
+    <hr>
+
+    <section id="Portfolio">
+        <h2>Portfolio</h2>
+        <h3>Logo</h3>
+        <img src="image/logo.jpg" alt="photo of logo" width="600">
+        <h3>Project</h3>
+        <img src="image/download.jpg" alt="photo project" width="600">
+    </section>
+    <hr>
+    <article>
+        <section id="audio">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio/Dancer in the Dark.mp3" type="audio/mpeg">
+                <p>Your browser does not support playback. <a href="audio/Dancer in the Dark.mp3">Download the audio</a></p>
+            </audio>
+        </section>
+    </article>
+    <hr>
+    <article>
+        <section id="video">
+            <h3>Introduction Video</h3>
+            <video controls width="600">
+                <source src="video/You and I Harleys In Hawaii feat. OIIA Cat.mp4" type="video/mp4">
+                <p>Your browser does not support video playback. <a href="video/You and I Harleys In Hawaii feat. OIIA Cat.mp4">Download the video</a></p>
+            </video>
+        </section>
+    </article>
+</body>
+</html>
